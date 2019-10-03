@@ -3,8 +3,6 @@ from datetime import datetime
 i = input('What is the number? ')
 name = 'myname'
 
-
-
 day = datetime.now().day
 
 while True:
