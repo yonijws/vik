@@ -2,7 +2,10 @@ from datetime import datetime
 
 i = input('What is the number? ')
 name = 'myname'
-month = datetime.now().month
+
+
+
+day = datetime.now().day
 
 while True:
 	try:
@@ -18,21 +21,21 @@ while True:
 		else: 
 			if (val < 100 and val > 9):
 				print("Two digit positive number")
-				if (val == month):
-					i2 = input("Enter 3 more numbers seperated by commas. Ex: 5,9,12: ")
-					var2 = i2.split(',')
-					print(var2)
-					# var2 is an array containing 3 strings
-					
+		if (val == day):
+			i2 = input("Enter 3 more numbers seperated by commas. Ex: 5,9,12: ")
+			var2 = i2.split(',')
+			print(var2)
+			# var2 is an array containing 3 strings
+			
 
-					## get result here
-					result = 5
-					if (result < 0):
-						print(result)
-					elif (result == 0):
-						print(name)
-					else:
-						print("-"*result)
+			## get result here
+			result = 5
+			if (result < 0):
+				print(result)
+			elif (result == 0):
+				print(name)
+			else:
+				print("-"*result)
 
 		break
 
